@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!--<TextView
+        android:id="@+id/bluetoothstate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth:" />-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:layout_weight="1.17"
+            android:layout_gravity="left">
+
+            <TextView
+                android:id="@+id/bluetoothdevice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Device:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Track log list:"
+                android:id="@+id/textView" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:text="Capture position"
+            android:id="@+id/buttonCapture"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView" />
+
+</LinearLayout>

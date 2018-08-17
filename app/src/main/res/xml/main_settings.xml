@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Settings" >
+        <CheckBoxPreference
+            android:key="multi_mode"
+            android:title="Multi mode" />
+        <CheckBoxPreference
+            android:key="optimize"
+            android:title="Optimize GPS" />
+        <Preference android:title="Clear All History Data" android:key="clearData"></Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notification settings" >
+        <CheckBoxPreference
+            android:key="vibrate"
+            android:title="Vibrate" />
+        <CheckBoxPreference
+            android:key="ringtone"
+            android:title="Ringtone" />
+    </PreferenceCategory>
+</PreferenceScreen>
